@@ -135,33 +135,33 @@ graph TD
     classDef highlight fill:#8b5cf6,stroke:#fff,stroke-width:2px,color:#fff;
 
     %% Client Layer
-    subgraph Client [🖥️ Client Browser / Kiosk Interface]
+    subgraph Client [ Client Browser / Kiosk Interface]
         direction TB
-        Intro(⚡ 5s Splash Intro) --> Bento(🏛️ Bento Grid Dashboard)
+        Intro(5s Splash Intro) --> Bento(Bento Grid Dashboard)
         
         subgraph Public_Services [Public Services]
-            Bento --> Complaint(📝 Complaint Filing)
-            Bento --> Tracker(🔄 Infinite Progress Marquee)
-            Bento --> Payment(💳 Payment Vault)
+            Bento --> Complaint(Complaint Filing)
+            Bento --> Tracker(Infinite Progress Marquee)
+            Bento --> Payment(Payment Vault)
         end
         
         subgraph Admin_Portal [Admin Portal]
-            Officer(👨‍💼 Nodal Officer Login) --> Dashboard(📊 Admin Command Center)
-            Dashboard --> Map(📍 Inverted Issue Map)
+            Officer(Nodal Officer Login) --> Dashboard(Admin Command Center)
+            Dashboard --> Map(Inverted Issue Map)
         end
     end
 
     %% Logic Layer
-    subgraph Logic [⚙️ Interaction Logic]
-        Physics(🌀 Cubic-Bezier Physics)
-        Geo(🗺️ Leaflet.js Geolocation)
-        TripleData(🔄 Data Tripling Logic)
+    subgraph Logic [ Interaction Logic]
+        Physics( Cubic-Bezier Physics)
+        Geo( Leaflet.js Geolocation)
+        TripleData(Data Tripling Logic)
     end
 
     %% Data Layer
-    subgraph Cloud [☁️ Firebase Cloud Services]
-        Firestore[(🔥 Cloud Firestore)]
-        Auth(🔐 Firebase Auth)
+    subgraph Cloud [ Firebase Cloud Services]
+        Firestore[(Cloud Firestore)]
+        Auth(Firebase Auth)
     end
 
     %% Connections
